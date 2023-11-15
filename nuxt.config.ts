@@ -2,9 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    '@nuxtjs/tailwindcss'
   ],
+  pinia: {
+    storesDirs: ['./stores/**'],
+  },
   app: {
     head: {
       title: 'Products =)',

@@ -13,4 +13,7 @@ body {
     .card {
         @apply p-3 rounded bg-white shadow-md h-full;
     }
+    .h2 {
+        @apply text-2xl md:text-lg
+    }
 }
