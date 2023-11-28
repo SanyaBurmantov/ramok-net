@@ -18,15 +18,39 @@ export const useCategoriesStore = defineStore('categoryStore', {
         categories: [
             {
                 type: 'simple',
-                name: 'Обычные',
+                name: 'Флаги',
                 examplePic: '/images/simpleFrame.png',
-                description: 'Вы можете указать любой цвет и любой текст рамки'
+                description: 'Рамки с флагами стран'
             },
             {
                 type: 'games',
-                name: 'Игры',
+                name: 'Футбол',
                 examplePic: '/images/simpleFrame.png',
-                description: 'Рамки с дизайном из игр'
+                description: 'Рамки на футбольную тематику'
+            },
+            {
+                type: 'simple',
+                name: 'Тематические',
+                examplePic: '/images/simpleFrame.png',
+                description: 'Игры/фильмы/книги'
+            },
+            {
+                type: 'games',
+                name: 'Надписи',
+                examplePic: '/images/simpleFrame.png',
+                description: 'Придумай свой текст рамки'
+            },
+            {
+                type: 'simple',
+                name: 'Модели авто',
+                examplePic: '/images/simpleFrame.png',
+                description: 'Номерная рамка под любую модель авто'
+            },
+            {
+                type: 'games',
+                name: 'Смотреть все',
+                examplePic: '/images/simpleFrame.png',
+                description: 'Каталог'
             }
         ]
     }),

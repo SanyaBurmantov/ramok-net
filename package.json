@@ -13,14 +13,17 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.9.4",
     "@vue/compiler-sfc": "^3.3.8",
+    "node-sass": "^9.0.0",
     "nuxt": "^3.8.1",
     "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "pinia": "^2.1.7",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "swiper": "^11.0.5"
   }
 }
