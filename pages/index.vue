@@ -4,12 +4,12 @@
   <div class="mb-20">
     <h2 class="h2">Наши товары</h2>
     <div class="products mb-10">
-      <div v-for="item of picture" class="flex flex-col justify-between flex-gap2 bg-[#8881] rounded-[4px] bg-white h-full p-4 m-4">
+      <div v-for="item of picture" class="products__item flex flex-col justify-between flex-gap2 bg-[#8881] rounded-[4px] bg-white h-full p-4 m-4">
         <div class="products-item">
           <div>{{item.name}}</div>
           <div>{{item.description}}</div>
         </div>
-        <img v-if="!!item.examplePic" :src="item.examplePic" :alt="item.name" class="w-full h-auto">
+        <img v-if="!!item.examplePic" :src="item.examplePic" :alt="item.name" class="products__item--pic w-full h-auto">
         <div v-else>Хочу видеть все рамки</div>
       </div>
     </div>
@@ -54,12 +54,26 @@ const picture = store.categories;
 </script>
 
 <style lang="scss">
-
-
   .products{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
+    &__item{
+      cursor: pointer;
+      border: 2px solid aliceblue;
+      position: relative;
+      &:hover{
+        border: 2px solid red;
+        transition: border 200ms;
+      }
+      &--pic{
+        &:hover{
+          bottom: 0;
+          transform: scale(105%);
+          transition: transform 100ms;
+        }
+      }
+    }
   }
 
 </style>
