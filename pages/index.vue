@@ -62,16 +62,11 @@ const picture = store.categories;
       cursor: pointer;
       border: 2px solid aliceblue;
       position: relative;
+      transition: border 200ms;
       &:hover{
         border: 2px solid red;
-        transition: border 200ms;
-      }
-      &--pic{
-        &:hover{
-          bottom: 0;
-          transform: scale(105%);
-          transition: transform 100ms;
-        }
+        transform: scale(102%);
+        transition: border 400ms;
       }
     }
   }
