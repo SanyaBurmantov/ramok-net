@@ -58,8 +58,8 @@ const picture = store.categories;
 
   .products{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
   }
 
 </style>
