@@ -41,4 +41,10 @@
   .router-link-exact-active {
     color: blueviolet;
   }
+
+  .container{
+    @media (min-width: 1530px){
+      max-width: 1280px;
+    }
+  }
 </style>

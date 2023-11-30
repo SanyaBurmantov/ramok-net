@@ -4,14 +4,20 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
+    'nuxt-swiper'
   ],
   css: ['~/assets/scss/main.scss'],
   pinia: {
     storesDirs: ['./stores/**'],
   },
+  swiper: {
+    prefix: 'Swiper',
+    styleLang: 'scss',
+    modules: ['navigation', 'pagination'],
+  },
   app: {
     head: {
-      title: 'Products =)',
+      title: 'Ramok-net.by',
       meta: [
         { name: 'description', content: 'Hello'}
       ],
