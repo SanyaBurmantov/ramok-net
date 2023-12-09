@@ -6,15 +6,15 @@ export const useSwiperPicturesStore = defineStore('storeId', {
             mainPagePictures: [
                 {
                     name: 'slide1',
-                    url: '/images/mainPage/mainImage1.png',
+                    url: '/images/mainPage/page1.jpg',
                 },
                 {
                     name: 'slide2',
-                    url: '/images/mainPage/mainImage2.png',
+                    url: '/images/mainPage/page2.jpg',
                 },
                 {
                     name: 'slide3',
-                    url: '/images/mainPage/mainImage3.png',
+                    url: '/images/mainPage/page3.jpg',
                 }
             ]
         }
