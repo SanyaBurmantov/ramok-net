@@ -1,17 +1,5 @@
 import { defineStore } from 'pinia'
 
-export const useProductStore = defineStore('storeId', {
-    state: () => {
-        return {
-            // all these properties will have their type inferred automatically
-            count: 0,
-            name: 'Eduardo',
-            isAdmin: true,
-            items: [],
-            hasChanged: true,
-        }
-    },
-})
 
 export const useCategoriesStore = defineStore('categoryStore', {
     state: () => ({
@@ -41,7 +29,7 @@ export const useCategoriesStore = defineStore('categoryStore', {
                 description: 'Придумай свой текст рамки'
             },
             {
-                type: 'simple',
+                type: 'autos',
                 name: 'Модели авто',
                 examplePic: '/images/mainPage/categorys/catalog5.png',
                 description: 'Номерная рамка под любую модель авто'
@@ -55,3 +43,50 @@ export const useCategoriesStore = defineStore('categoryStore', {
     }),
 })
 
+export const useProductStore = defineStore('productStore', {
+    state: () => ({
+        all: [
+            {
+                category: "autos",
+                description: "Модель вашего любимого авто",
+                id: "1",
+                image:  "/images/mainPage/categorys/autos/4.1.jpg",
+                price: "109.95",
+                title: "Имя(название)",
+            },
+            {
+                category: "flags",
+                description: "Флаги блин)",
+                id: "2",
+                image:  "/images/mainPage/categorys/flags/1.1.jpg",
+                price: "109.95",
+                title: "Флаг страны",
+            },
+            {
+                category: "footbal",
+                description: "Футбольная тематика",
+                id: "3",
+                image:  "/images/mainPage/categorys/footbal/5.1.jpg",
+                price: "109.95",
+                title: "Имя(команды)",
+            },
+            {
+                category: "texts",
+                description: "Надпись придумай сам",
+                id: "4",
+                image:  "/images/mainPage/categorys/texts/3.1.jpg",
+                price: "109.95",
+                title: "Текст(любой)",
+            },
+            {
+                category: "themes",
+                description: "Игры фильмы книги",
+                id: "5",
+                image:  "/images/mainPage/categorys/themes/2.1.jpg",
+                price: "109.95",
+                title: "Текст или что угодно",
+            }
+        ]
+    })
+})
+ 

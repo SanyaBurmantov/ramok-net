@@ -9,11 +9,16 @@
 </template>
 
 <script setup>
+import {useProductStore} from '@/stores/productStore.js'
   definePageMeta({
     layout: 'default'
   })
+  
+  
+  const productStore = useProductStore()
+  const products = productStore.all
 
-  const { data: products } =await useFetch('https://fakestoreapi.com/products')
+ 
 
   useHead({
     title: 'Nuxt Dojo | Merch',
