@@ -47,7 +47,7 @@ export const useProductStore = defineStore('productStore', {
     state: () => ({
         all: [
             {
-                category: "autos",
+                category: "all",
                 description: "Модель вашего любимого авто",
                 id: "1",
                 image:  "/images/mainPage/categorys/autos/4.1.jpg",
@@ -55,7 +55,7 @@ export const useProductStore = defineStore('productStore', {
                 title: "Имя(название)",
             },
             {
-                category: "flags",
+                category: "all",
                 description: "Флаги блин)",
                 id: "2",
                 image:  "/images/mainPage/categorys/flags/1.1.jpg",
@@ -63,7 +63,7 @@ export const useProductStore = defineStore('productStore', {
                 title: "Флаг страны",
             },
             {
-                category: "footbal",
+                category: "all",
                 description: "Футбольная тематика",
                 id: "3",
                 image:  "/images/mainPage/categorys/footbal/5.1.jpg",
@@ -71,7 +71,7 @@ export const useProductStore = defineStore('productStore', {
                 title: "Имя(команды)",
             },
             {
-                category: "texts",
+                category: "all",
                 description: "Надпись придумай сам",
                 id: "4",
                 image:  "/images/mainPage/categorys/texts/3.1.jpg",
@@ -79,7 +79,7 @@ export const useProductStore = defineStore('productStore', {
                 title: "Текст(любой)",
             },
             {
-                category: "themes",
+                category: "all",
                 description: "Игры фильмы книги",
                 id: "5",
                 image:  "/images/mainPage/categorys/themes/2.1.jpg",
@@ -91,7 +91,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "autos",
                 description: "Модель вашего любимого авто",
-                id: "1",
+                id: "0",
                 image:  "/images/mainPage/categorys/autos/4.1.jpg",
                 price: "109.95",
                 title: "Имя(название)",
@@ -101,7 +101,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "themes",
                 description: "Игры фильмы книги",
-                id: "5",
+                id: "0",
                 image:  "/images/mainPage/categorys/themes/2.1.jpg",
                 price: "109.95",
                 title: "Текст или что угодно",
@@ -111,7 +111,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Надпись придумай сам",
-                id: "4",
+                id: "0",
                 image:  "/images/mainPage/categorys/texts/3.1.jpg",
                 price: "109.95",
                 title: "Текст(любой)",
@@ -121,7 +121,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "footbal",
                 description: "Футбольная тематика",
-                id: "3",
+                id: "0",
                 image:  "/images/mainPage/categorys/footbal/5.1.jpg",
                 price: "109.95",
                 title: "Имя(команды)",
@@ -131,7 +131,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "flags",
                 description: "Флаги блин)",
-                id: "2",
+                id: "0",
                 image:  "/images/mainPage/categorys/flags/1.1.jpg",
                 price: "109.95",
                 title: "Флаг страны",
