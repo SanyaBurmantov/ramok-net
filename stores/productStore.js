@@ -23,7 +23,7 @@ export const useCategoriesStore = defineStore('categoryStore', {
                 description: 'Игры/фильмы/книги'
             },
             {
-                type: 'games',
+                type: 'texts',
                 name: 'Надписи',
                 examplePic: '/images/mainPage/categorys/catalog4.png',
                 description: 'Придумай свой текст рамки'
