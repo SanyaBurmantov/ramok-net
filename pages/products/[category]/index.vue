@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="grid grid-cols-4 gap-5">
+      <p>{{categoryName}}</p>
       <div class="" v-for="p in products">
         <ProductCard :product="p" />
       </div>
@@ -14,9 +15,9 @@ import {useProductStore} from '@/stores/productStore.js'
     layout: 'default'
   })
   
-  
+  const categoryName = useRoute().params.category.toString()
   const productStore = useProductStore()
-  const products = productStore.all
+  const products = productStore[categoryName]
 
  
 

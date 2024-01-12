@@ -5,7 +5,7 @@
     <h2 class="h2 mb-10">Наши товары</h2>
     <div class="products mb-10">
       <NuxtLink 
-        :to="`/products/${item.type}`" 
+        :to="`/products/${item.type}`"
         v-for="item of picture" 
         class="products__item flex flex-col justify-between flex-gap2 bg-[#8881] rounded-[4px] bg-white h-full p-4"
       >
