@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Alert></Alert>
     <header class="shadow-sm bg-white">
       <nav class="container mx-auto p-4 flex items-center">
         <ul class="flex flex-1 gap-2 justify-start items-center">
@@ -23,9 +24,9 @@
       <div>
         <nav class="container mx-auto p-4 flex">
           <ul class="flex gap-2">
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/about">About</NuxtLink></li>
-            <li><NuxtLink to="/products">Products</NuxtLink></li>
+            <li><NuxtLink to="/">Главная</NuxtLink></li>
+            <li><NuxtLink to="/about">О нас</NuxtLink></li>
+            <li><NuxtLink to="/products">Каталог</NuxtLink></li>
           </ul>
         </nav>
       </div>

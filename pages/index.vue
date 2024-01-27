@@ -3,7 +3,6 @@
   <SectionsSectionCatalog />
   <FormCallback />
   <ExamplesSection />
-  <Modal> </Modal>
 </template>
 
 <script setup>

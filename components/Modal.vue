@@ -37,9 +37,6 @@
         <div class="mb-4">Общая сумма: {{getCount()}}</div>
         <order-form-callback />
       </div>
-
-
-
     </UModal>
   </div>
   </ClientOnly>
