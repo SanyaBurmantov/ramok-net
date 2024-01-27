@@ -1,7 +1,7 @@
 <template>
     <SectionsSectionCatalog />
     <div>
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid grid-cols-3 gap-5">
             <div class="" v-for="p in products">
             <ProductCard :product="p" />
             </div>

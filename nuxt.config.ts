@@ -2,9 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    'nuxt-swiper'
+    'nuxt-swiper',
+    '@pinia-plugin-persistedstate/nuxt',
+    '@nuxt/ui'
   ],
   css: ['~/assets/scss/main.scss'],
   pinia: {
