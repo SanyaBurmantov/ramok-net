@@ -2,11 +2,14 @@
   <div>
     <header class="shadow-sm bg-white">
       <nav class="container mx-auto p-4 flex items-center">
-        <NuxtLink to="/" class="flex flex-1 justify-start" >Home</NuxtLink>
-        <NuxtLink to="/" class="font-bold flex flex-1 justify-center">Logo</NuxtLink>
-        <ul class="flex flex-1 gap-2 justify-end ">
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products" class="btn">Products</NuxtLink></li>
+        <ul class="flex flex-1 gap-2 justify-start items-center">
+          <li><NuxtLink to="/" class="btn-empty">Главная</NuxtLink></li>
+        </ul>
+        <NuxtLink to="/" class="font-bold flex flex-1 justify-center logo"><img src="/logo.png" alt="logo"></NuxtLink>
+        <ul class="flex flex-1 gap-2 justify-end items-center">
+          <li><NuxtLink to="/about" class="btn-empty">О нас</NuxtLink></li>
+          <li><NuxtLink to="/products" class="btn-empty">Товары</NuxtLink></li>
+          <li><Modal v-model="isOpen"/></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +34,7 @@
 </template>
 
 <script setup>
-
+const isOpen = ref(false)
 </script>
 
 <style scoped>
@@ -42,9 +45,23 @@
     color: blueviolet;
   }
 
+  .logo{
+    position: relative;
+    img{
+      position: absolute;
+      top: -23px;
+      width: 83px;
+    }
+
+  }
+
   .container{
     @media (min-width: 1530px){
       max-width: 1280px;
     }
+  }
+
+  .buttons{
+
   }
 </style>

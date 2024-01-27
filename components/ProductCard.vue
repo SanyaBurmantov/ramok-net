@@ -2,12 +2,39 @@
   <div class="card text-center">
     <img :src="product.image" alt="product">
     <p class="font-bold text-gray-500 m-4 truncate">{{ product.title }}</p>
-    <div class="flex gap-2">
-      <NuxtLink :to="`/products/${product.category}/${product.id}`" class="grow">
-        <p class="btn my-4">О товаре</p>
+    <div class="flex flex-1 gap-2 justify-center">
+      <NuxtLink :to="`/products/${product.category}/${product.id}`">
+        <UButton
+            icon="i-heroicons-magnifying-glass"
+            size="md"
+            color="green"
+            variant="solid"
+            label="Подробнее"
+            :trailing="false"
+        />
       </NuxtLink>
-      <p v-if="!productInCart()" class="btn my-4 grow" @click="addToCart(product)">В корзину</p>
-      <p v-else class="btn my-4 grow btn-remove" @click="removeFromCart(product)">Удалить</p>
+      <ClientOnly>
+      <UButton
+          v-if="!productInCart()"
+          @click="addToCart(product)"
+          icon="i-heroicons-archive-box-arrow-down"
+          size="md"
+          color="green"
+          variant="outline"
+          label="В корзину"
+          :trailing="false"
+      />
+      <UButton
+          v-else
+          @click="removeFromCart(product)"
+          icon="i-heroicons-archive-box-arrow-down"
+          size="md"
+          color="red"
+          variant="soft"
+          label="Удалить"
+          :trailing="false"
+      />
+      </ClientOnly>
     </div>
   </div>
 </template>
@@ -19,14 +46,10 @@
   const cartStore = useCartStore()
   function addToCart(product) {
     cartStore.addToCart(product)
-
   }
-
   function removeFromCart(product){
     cartStore.removeFromCart(product)
-
   }
-
   function productInCart(){
     return cartStore.cart.some(item => item.id === product.id);
   }

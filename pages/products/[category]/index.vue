@@ -1,16 +1,18 @@
 <template>
   <div>
     <p>{{categoryName}}</p>
-    <div class="products-list">
+    <div class="products-list mb-10">
       <div class="" v-for="p in products">
         <ProductCard :product="p" />
       </div>
     </div>
+    <FormCallback />
   </div>
 </template>
 
 <script setup>
 import {useProductStore} from '@/stores/productStore.js'
+import FormCallback from "~/components/forms/form-callback.vue";
   definePageMeta({
     layout: 'default'
   })

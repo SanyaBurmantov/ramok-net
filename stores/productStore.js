@@ -91,7 +91,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "autos",
                 description: "Модель вашего любимого авто",
-                id: "0",
+                id: "6",
                 image:  "/images/mainPage/categorys/autos/4.1.jpg",
                 price: "109.95",
                 title: "Имя(название)",
@@ -101,7 +101,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "themes",
                 description: "Игры фильмы книги",
-                id: "0",
+                id: "7",
                 image:  "/images/mainPage/categorys/themes/2.1.jpg",
                 price: "109.95",
                 title: "Текст или что угодно",
@@ -111,7 +111,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "0",
+                id: "8",
                 image:  "/images/mainPage/categorys/texts/1.png",
                 price: "109.95",
                 title: "Немецкая сучка",
@@ -119,7 +119,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "1",
+                id: "9",
                 image:  "/images/mainPage/categorys/texts/2.png",
                 price: "109.95",
                 title: "Я люблю газ давать пи**а",
@@ -127,7 +127,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "2",
+                id: "10",
                 image:  "/images/mainPage/categorys/texts/3.png",
                 price: "109.95",
                 title: "Fake-Taxi",
@@ -135,7 +135,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "3",
+                id: "11",
                 image:  "/images/mainPage/categorys/texts/4.png",
                 price: "109.95",
                 title: "Мамы, прячте дочек",
@@ -143,7 +143,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "4",
+                id: "12",
                 image:  "/images/mainPage/categorys/texts/5.png",
                 price: "109.95",
                 title: "Вообще по*уй",
@@ -151,7 +151,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "5",
+                id: "13",
                 image:  "/images/mainPage/categorys/texts/6.png",
                 price: "109.95",
                 title: "Буква Ю",
@@ -159,7 +159,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "6",
+                id: "14",
                 image:  "/images/mainPage/categorys/texts/7.png",
                 price: "109.95",
                 title: "MMM HUETA",
@@ -167,7 +167,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Тут мог бы быть ваш инстаграм =)",
-                id: "7",
+                id: "15",
                 image:  "/images/mainPage/categorys/texts/8.png",
                 price: "109.95",
                 title: "Ваш инстаграм",
@@ -175,7 +175,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "8",
+                id: "16",
                 image:  "/images/mainPage/categorys/texts/9.png",
                 price: "109.95",
                 title: "BRAZZERS",
@@ -183,7 +183,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "9",
+                id: "17",
                 image:  "/images/mainPage/categorys/texts/10.png",
                 price: "109.95",
                 title: "Вам показалось",
@@ -191,7 +191,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "10",
+                id: "18",
                 image:  "/images/mainPage/categorys/texts/11.png",
                 price: "109.95",
                 title: "Японская сучка",
@@ -199,7 +199,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "11",
+                id: "19",
                 image:  "/images/mainPage/categorys/texts/12.png",
                 price: "109.95",
                 title: "Вези меня мразь",
@@ -207,7 +207,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "12",
+                id: "20",
                 image:  "/images/mainPage/categorys/texts/13.png",
                 price: "109.95",
                 title: "Не прижимайся - не в постели",
@@ -215,7 +215,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "13",
+                id: "21",
                 image:  "/images/mainPage/categorys/texts/14.png",
                 price: "109.95",
                 title: "Отец на дороге",
@@ -223,7 +223,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "14",
+                id: "22",
                 image:  "/images/mainPage/categorys/texts/15.png",
                 price: "109.95",
                 title: "Не нужна тебе такая тачка брат",
@@ -231,7 +231,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "15",
+                id: "23",
                 image:  "/images/mainPage/categorys/texts/16.png",
                 price: "109.95",
                 title: "Обогнал - женись",
@@ -239,7 +239,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "16",
+                id: "24",
                 image:  "/images/mainPage/categorys/texts/17.png",
                 price: "109.95",
                 title: "Не гнилая а облегченная",
@@ -247,7 +247,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "17",
+                id: "25",
                 image:  "/images/mainPage/categorys/texts/18.png",
                 price: "109.95",
                 title: "Просто рамка",
@@ -255,7 +255,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Тут мог бы быть ваш текст",
-                id: "18",
+                id: "26",
                 image:  "/images/mainPage/categorys/texts/19.png",
                 price: "109.95",
                 title: "Любой ваш текст",
@@ -263,7 +263,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "19",
+                id: "27",
                 image:  "/images/mainPage/categorys/texts/20.png",
                 price: "109.95",
                 title: "PornHub",
@@ -271,7 +271,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "20",
+                id: "28",
                 image:  "/images/mainPage/categorys/texts/21.png",
                 price: "109.95",
                 title: "Я девочка мне можно",
@@ -279,7 +279,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "texts",
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
-                id: "21",
+                id: "29",
                 image:  "/images/mainPage/categorys/texts/22.png",
                 price: "109.95",
                 title: "Главное двигаться",
@@ -289,7 +289,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "footbal",
                 description: "Футбольная тематика",
-                id: "0",
+                id: "30",
                 image:  "/images/mainPage/categorys/footbal/5.1.jpg",
                 price: "109.95",
                 title: "Имя(команды)",
@@ -299,7 +299,7 @@ export const useProductStore = defineStore('productStore', {
             {
                 category: "flags",
                 description: "Флаги блин)",
-                id: "0",
+                id: "31",
                 image:  "/images/mainPage/categorys/flags/1.1.jpg",
                 price: "109.95",
                 title: "Флаг страны",
