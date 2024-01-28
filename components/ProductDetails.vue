@@ -2,7 +2,7 @@
   <div class="breadcrumb"><UBreadcrumb :links="links" /></div>
   <div class="card">
     <div class="card__info">
-      <div class="p-7">
+      <div class="p-3">
         <img :src="product.image" alt="product img" class="mx-auto my-7">
       </div>
       <div class="p-7">
