@@ -16,18 +16,14 @@
     definePageMeta({
       layout: 'default'
     })
-    
-    
     const route = useRoute()
     const productStore = useProductStore()
     const products = productStore.all
-  
-   
-  
+
     useHead({
-      title: 'Nuxt Dojo | Merch',
+      title: `Ramok-net.by`,
       meta: [
-        { name: 'description', content: 'Nuxt 3 hello'}
+        { name: 'description', content: 'Кастомные номерные рамки для вашего авто'}
       ]
     })
 

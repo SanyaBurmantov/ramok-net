@@ -3,15 +3,16 @@
     <Alert></Alert>
     <header class="shadow-sm bg-white">
       <nav class="container mx-auto p-4 flex items-center">
-        <ul class="flex flex-1 gap-2 justify-start items-center">
+        <ul class="flex flex-1 gap-2 justify-start items-center navigation">
           <li><NuxtLink to="/" class="btn-empty">Главная</NuxtLink></li>
         </ul>
         <NuxtLink to="/" class="font-bold flex flex-1 justify-center logo"><img src="/logo.png" alt="logo"></NuxtLink>
-        <ul class="flex flex-1 gap-2 justify-end items-center">
+        <ul class="flex flex-1 gap-2 justify-end items-center navigation">
           <li><NuxtLink to="/about" class="btn-empty">О нас</NuxtLink></li>
           <li><NuxtLink to="/products" class="btn-empty">Товары</NuxtLink></li>
           <li><Modal v-model="isOpen"/></li>
         </ul>
+        <Dropdown></Dropdown>
       </nav>
     </header>
 
@@ -50,8 +51,13 @@ const isOpen = ref(false)
     position: relative;
     img{
       position: absolute;
-      top: -23px;
-      width: 83px;
+      top: -55px;
+      width: 109px;
+      @media (max-width: 1000px){
+        top: -52px;
+        width: 99px;
+        left: -25px;
+      }
     }
 
   }
@@ -62,7 +68,10 @@ const isOpen = ref(false)
     }
   }
 
-  .buttons{
-
+  .navigation{
+    display: flex;
+    @media (max-width: 1000px){
+      display: none;
+    }
   }
 </style>

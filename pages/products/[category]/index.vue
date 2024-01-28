@@ -23,9 +23,9 @@ import FormCallback from "~/components/forms/form-callback.vue";
   const categoriesStore = useCategoriesStore().categories
 
   useHead({
-    title: 'Nuxt Dojo | Merch',
+    title: `Ramok-net.by | ${getNameOfStore(categoryName)}`,
     meta: [
-      { name: 'description', content: 'Nuxt 3 hello'}
+      { name: 'description', content: `${getNameOfStore(categoryName)}` }
     ]
   })
 
@@ -46,7 +46,7 @@ import FormCallback from "~/components/forms/form-callback.vue";
     to: '/'
   }, {
     label: 'Каталог',
-    icon: 'i-heroicons-square-3-stack-3d',
+    icon: 'i-heroicons-folder-open',
     to: '/products'
   }, {
     label: getNameOfStore(categoryName),

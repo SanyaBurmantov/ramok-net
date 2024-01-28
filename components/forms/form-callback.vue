@@ -4,18 +4,53 @@
       <p>Не смогли подобрать рамку на свой вкус?</p>
       <p>Не проблема, заполните форму обратной связи и наш менеджер свяжется с вами и поможет подобрать именно ту рамку, которая подойдет лично вам и вашему авто.</p>
     </div>
-    <form class="flex flex-col rounded-[4px] h-full p-4 form">
-      <label>Введите Ваше имя</label>
-      <input>
-      <label>Введите ваш номер телефона</label>
-      <input>
-      <button class="mt-5 btn">Свяжитесь со мной</button>
-    </form>
+    <UForm :state="state" @submit="onSubmit">
+      <UFormGroup class="mb-2" label="Ваше имя">
+        <UInput placeholder="Иван" v-model="state.name" icon="i-heroicons-face-smile" />
+      </UFormGroup>
+      <UFormGroup class="mb-6" label="Номер телефона">
+        <UInput v-model="state.phone" icon="i-heroicons-phone" type="string" placeholder="Ваш номер телефона"/>
+      </UFormGroup>
+      <UButton type="submit">
+        Свяжитесь со мной
+      </UButton>
+    </UForm>
   </div>
 
 </template>
 
 <script setup>
+import {useAlertStore} from "~/stores/alertStore.js";
+
+const state = reactive({
+  name: undefined,
+  phone: undefined,
+})
+const alertStore = useAlertStore()
+async function onSubmit(event) {
+  if(state.name && state.phone){
+    await sendToFeedback(event.data)
+    state.name = "";
+    state.phone = "";
+  alertStore.showAlert('Сообщение отправлено! Наш оператор свяжется с вами в скором времени.', 5000)
+  } else {
+    alertStore.showAlert('Нет данных для отправки', 5000)
+  }
+}
+
+async function sendToFeedback(data) {
+  let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
+  let sanya = "408745156"
+  let { name, phone} = data
+
+  let message = `Клиент: ${name}%0AНомер телефона ${phone} %0A%0AПросит обратную связь!`;
+
+  let api = new XMLHttpRequest();
+
+  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${sanya}&text=${message}&parse_mode=html`
+  api.open("GET", url, true);
+  api.send();
+}
 </script>
 
 <style scoped lang="scss">

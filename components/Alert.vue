@@ -16,7 +16,7 @@
 
 <style scoped lang="scss">
 .alert{
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   z-index: 100;

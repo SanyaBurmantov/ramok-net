@@ -1,7 +1,7 @@
 <template>
     <div>
       <Head>
-        <Title>Nuxt Dojo | {{ product.title }}</Title>
+        <Title>{{ product.title }} | Ramok-net.by</Title>
         <Meta name="description" :content="product.description" />
       </Head>
       
