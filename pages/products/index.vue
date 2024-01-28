@@ -1,4 +1,5 @@
 <template>
+    <div class="breadcrumb"><UBreadcrumb :links="links" /></div>
     <SectionsSectionCatalog />
     <div>
         <div class="grid grid-cols-3 gap-5">
@@ -29,7 +30,19 @@
         { name: 'description', content: 'Nuxt 3 hello'}
       ]
     })
+
+  const links = [{
+    label: 'Главная',
+    icon: 'i-heroicons-home',
+    to: '/'
+  }, {
+    label: 'Каталог',
+    icon: 'i-heroicons-folder-open'
+  }]
   </script>
   
   <style scoped>
+  .breadcrumb{
+    padding: 10px;
+  }
   </style>

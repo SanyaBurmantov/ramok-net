@@ -1,6 +1,6 @@
 <template>
+  <div class="breadcrumb"><UBreadcrumb :links="links" /></div>
   <div>
-    <p>{{categoryName}}</p>
     <div class="products-list mb-10">
       <div class="" v-for="p in products">
         <ProductCard :product="p" />
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import {useProductStore} from '@/stores/productStore.js'
+import {useCategoriesStore, useProductStore} from '@/stores/productStore.js'
 import FormCallback from "~/components/forms/form-callback.vue";
   definePageMeta({
     layout: 'default'
@@ -20,8 +20,7 @@ import FormCallback from "~/components/forms/form-callback.vue";
   const categoryName = useRoute().params.category.toString()
   const productStore = useProductStore()
   const products = productStore[categoryName]
-
- 
+  const categoriesStore = useCategoriesStore().categories
 
   useHead({
     title: 'Nuxt Dojo | Merch',
@@ -29,9 +28,36 @@ import FormCallback from "~/components/forms/form-callback.vue";
       { name: 'description', content: 'Nuxt 3 hello'}
     ]
   })
+
+  function getNameOfStore(category){
+    let breadcrumbName = ""
+    categoriesStore.forEach(el => {
+      if(el.type === category){
+        breadcrumbName =  el.name
+      }
+    })
+    return breadcrumbName
+  }
+
+
+  const links = [{
+    label: 'Главная',
+    icon: 'i-heroicons-home',
+    to: '/'
+  }, {
+    label: 'Каталог',
+    icon: 'i-heroicons-square-3-stack-3d',
+    to: '/products'
+  }, {
+    label: getNameOfStore(categoryName),
+    icon: 'i-heroicons-square-3-stack-3d'
+  }]
 </script>
 
 <style scoped>
+  .breadcrumb{
+    padding: 10px;
+  }
   .products-list{
     display: grid;
     grid-gap: 15px;

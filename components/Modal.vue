@@ -1,10 +1,10 @@
 <template>
-  <ClientOnly>
   <div>
+    <ClientOnly>
     <button class="btn" @click="isOpen = true">
       Корзина ({{cartStore.cart.length}})
     </button>
-
+    </ClientOnly>
     <UModal v-model="isOpen">
       <div v-if="cartStore.cart.length < 1" class="empty-cart">
         Ваша корзина пуста =(
@@ -39,7 +39,6 @@
       </div>
     </UModal>
   </div>
-  </ClientOnly>
 </template>
 
 <script setup>
