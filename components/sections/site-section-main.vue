@@ -28,8 +28,10 @@
       <div class="flex">
         <div class="header-section__texts">
           <h1 class="header-section__texts--title">Ramok-net.by</h1>
-          <h2 class="header-section__texts--subtitle">Твой надежный способ выделиться</h2>
-          <p class="header-section__texts--description">Индивидуальные номерные рамки на любой вкус и цвет</p>
+          <h2 class="header-section__texts--subtitle">Дайте своему авто неповторимый стиль! 🚗💫 </h2>
+          <p class="header-section__texts--description">Покажите миру свой вкус и индивидуальность с нашими номерными рамками. 🎨✨ </p>
+           <p class="header-section__texts--description"> Не просто авто. Это выражение вашей
+            личности! 🌟</p>
         </div>
       </div>
     </div>

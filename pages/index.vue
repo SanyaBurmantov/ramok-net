@@ -1,5 +1,10 @@
 <template>
   <SiteSectionMainHeader class="mb-10"/>
+
+  <p>В Ramok-Net.by у вас есть выбор:</p>
+  <p>1. Изберите стиль из наших тематических коллекций.</p>
+  <p class="mb-8">2. Создайте свой уникальный дизайн – мы готовы воплотить ваши идеи в реальность!</p>
+
   <SectionsSectionCatalog />
   <FormCallback />
   <ExamplesSection />
