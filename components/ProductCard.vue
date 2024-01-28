@@ -61,7 +61,7 @@
     return cartStore.cart.some(item => item.id === product.id);
   }
   const route = useRoute()
-  const category = (route.params.category)
+  const category = (route.params.category) && 'all'
 
 </script>
 
