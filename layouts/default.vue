@@ -2,7 +2,7 @@
   <div>
     <Alert></Alert>
     <header class="shadow-sm bg-white">
-      <nav class="container mx-auto p-4 flex items-center">
+      <nav class="container mx-auto p-2 flex items-center">
         <ul class="flex flex-1 gap-2 justify-start items-center navigation">
           <li><NuxtLink to="/" class="btn-empty">Главная</NuxtLink></li>
         </ul>
@@ -17,20 +17,20 @@
     </header>
 
    <!-- output the page -->
-    <div class="container mx-auto p-4 mb-20">
-      <slot />
-    </div>
+    <main>
+      <div class="container mx-auto p-2 mb-20">
+        <slot />
+      </div>
+    </main>
 
     <footer class="shadow-sm bg-white">
-      <div>
-        <nav class="container mx-auto p-4 flex">
-          <ul class="flex gap-2">
-            <li><NuxtLink to="/">Главная</NuxtLink></li>
-            <li><NuxtLink to="/about">О нас</NuxtLink></li>
-            <li><NuxtLink to="/products">Каталог</NuxtLink></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="container mx-auto p-2 flex">
+        <ul class="flex gap-2">
+          <li><NuxtLink to="/">Главная</NuxtLink></li>
+          <li><NuxtLink to="/about">О нас</NuxtLink></li>
+          <li><NuxtLink to="/products">Каталог</NuxtLink></li>
+        </ul>
+      </nav>
     </footer>
   </div>
 </template>
@@ -51,12 +51,12 @@ const isOpen = ref(false)
     position: relative;
     img{
       position: absolute;
-      top: -55px;
-      width: 109px;
+      top: -38px;
+      width: 89px;
       @media (max-width: 1000px){
-        top: -52px;
-        width: 99px;
-        left: -25px;
+        top: -34px;
+        width: 72px;
+        left: -16px;
       }
     }
 
