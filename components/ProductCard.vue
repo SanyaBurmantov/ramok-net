@@ -7,7 +7,7 @@
         <p class="font-bold text-gray-500 m-2 truncate">Стоимость: {{ product.price }} BYN</p>
       </div>
       <div class="flex flex-1 gap-2 justify-center buttons">
-        <NuxtLink :to="`/products/${product.category}/${product.id}`">
+        <NuxtLink :to="`/products/${category}/${product.id}`">
           <UButton
             icon="i-heroicons-magnifying-glass"
             size="md"
@@ -58,7 +58,8 @@
   function productInCart(){
     return cartStore.cart.some(item => item.id === product.id);
   }
-
+  const route = useRoute()
+  const category = (route.params.category)
 
 </script>
 

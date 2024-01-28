@@ -48,6 +48,8 @@
   import SectionCatalog from "~/components/sections/section-catalog.vue";
   const categoriesStore = useCategoriesStore().categories
   const { product } = defineProps(['product'])
+  const route = useRoute()
+  const category = (route.params.category)
   const links = [{
     label: 'Главная',
     icon: 'i-heroicons-home',
@@ -57,9 +59,9 @@
     icon: 'i-heroicons-folder-open',
     to: '/products'
   }, {
-    label: getNameOfStore(product.category),
+    label: getNameOfStore(category),
     icon: 'i-heroicons-square-3-stack-3d',
-    to: `/products/${product.category}`
+    to: `/products/${category}`
   },{
     label: product.title,
   }]
