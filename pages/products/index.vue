@@ -1,5 +1,10 @@
 <template>
     <div class="breadcrumb"><UBreadcrumb :links="links" /></div>
+
+  <p class="mt-2">Добро пожаловать в наш каталог! 🌟 </p>
+
+  <p class="mt-2 mb-3">Здесь вы найдете всё, что нужно для стильного оформления вашего автомобиля. 🚗✨ </p>
+
     <SectionsSectionCatalog />
     <div>
         <div class="products-list mb-10">

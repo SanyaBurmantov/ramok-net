@@ -1,8 +1,9 @@
 <template>
     <section class="main-page-section-catalog">
         <div class="mb-15">
-    <h2 class="h2 mb-10">Наши товары</h2>
-    <div class="products mb-10">
+    <h2 class="h2 mb-4">Доступные категории:</h2>
+
+    <div class="products mb-4">
       <NuxtLink 
         :to="`/products/${item.type}`"
         v-for="item of picture" 
@@ -16,6 +17,7 @@
         <div v-else>Хочу видеть все рамки</div>
       </NuxtLink>
     </div>
+    <h3 class="h3 mb-10"> Уникальные дизайны, высокое качество – создайте свой стиль с Ramok-Net.by! 🎨💯</h3>
   </div>
     </section>
   </template>

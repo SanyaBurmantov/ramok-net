@@ -1,5 +1,8 @@
 <template>
   <div class="breadcrumb"><UBreadcrumb class="flex-wrap" :links="links" /></div>
+
+  <p class="mt-2">Добро пожаловать в каталог:  {{getNameOfStore(categoryName)}}! 🌟 </p>
+
   <div>
     <div class="products-list mb-10">
       <div class="" v-for="p in products">
