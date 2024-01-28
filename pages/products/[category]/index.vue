@@ -33,6 +33,10 @@ import FormCallback from "~/components/forms/form-callback.vue";
     let breadcrumbName = ""
     categoriesStore.forEach(el => {
       if(el.type === category){
+        if(el.type === "all"){
+          const productStore = useProductStore()
+          productStore.getAllProducts();
+        }
         breadcrumbName =  el.name
       }
     })
@@ -67,8 +71,8 @@ import FormCallback from "~/components/forms/form-callback.vue";
       grid-gap: 7px;
     }
     @media (max-width: 640px) {
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 15px;
+      display: block;
+      margin-bottom: 5px;
     }
   }
 </style>

@@ -40,16 +40,18 @@ async function onSubmit(event) {
 
 async function sendToFeedback(data) {
   let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
-  let sanya = "408745156"
+  let users = ["408745156", "809871443"]
   let { name, phone} = data
 
   let message = `Клиент: ${name}%0AНомер телефона ${phone} %0A%0AПросит обратную связь!`;
 
   let api = new XMLHttpRequest();
+  await users.forEach(el => {
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`
+    api.open("GET", url, true);
+    api.send();
+  })
 
-  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${sanya}&text=${message}&parse_mode=html`
-  api.open("GET", url, true);
-  api.send();
 }
 </script>
 

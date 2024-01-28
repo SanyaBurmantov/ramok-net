@@ -3,7 +3,7 @@
     <UFormGroup class="mb-2" label="Ваше имя">
       <UInput placeholder="Иван" v-model="state.name" icon="i-heroicons-face-smile" />
     </UFormGroup>
-    <UFormGroup class="mb-2"  v-slot="{ error }" label="Номер телефона" :error="!validatePhoneNumber(phone) && 'Введите номер телефона в формате +375xx xxx xx xx'">
+    <UFormGroup class="mb-2" label="Номер телефона">
       <UInput v-model="state.phone" icon="i-heroicons-phone" type="string" placeholder="Ваш номер телефона"/>
     </UFormGroup>
     <UFormGroup class="mb-4" label="Ваш комментарий">
@@ -39,22 +39,22 @@ async function onSubmit(event) {
    alertStore.showAlert('Вы не ввели номер/ неправильный номер телефона', 5000)
     return
   }
-  await this.sendToSubscribers(event.data)
+  await sendToSubscribers(event.data)
   alertStore.showAlert(`Спасибо за заказ, ${state.name}, наш менеджер свяжется с Вами!`, 5000)
   cartStore.cart = []
 }
 
 
 async function sendToSubscribers(data) {
+  if(!data) return
   let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
   let users = ["408745156", "809871443"]
 
-  console.log(data)
   let { name, comment, phone, products, finalPrice } = data
   let strMatrix = "";
   let posValue = products.length;
 
-  let listProducts = products.map(el => {
+  products.forEach(el => {
     strMatrix += "%0A %09" + el.title.toString();
     strMatrix += "%0A %09" + el.category.toString();
     strMatrix += "%0A %09Цена " + el.price.toString() + "BYN%0A";
@@ -68,10 +68,6 @@ async function sendToSubscribers(data) {
     api.open("GET", url, true);
     api.send();
   })
-
-
-
-
 }
 
 function validatePhoneNumber(phoneNumber) {

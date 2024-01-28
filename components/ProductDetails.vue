@@ -33,12 +33,11 @@
           />
         </ClientOnly>
       </div>
-
     </div>
-    <div class="mt-20 container">
+  </div>
+  <div class="mt-20 container reklamka">
     <h2 class="text-4xl my-7">Смотрите так же</h2>
     <SectionCatalog />
-    </div>
   </div>
 </template>
 
@@ -107,7 +106,8 @@
   img {
     max-width: 400px;
     @media (max-width: 540px) {
-      max-width: 200px;
+      width: 100%;
+      max-width: unset;
     }
   }
   .card__info{
@@ -121,5 +121,9 @@
       justify-content: flex-start;
       align-items: flex-start;
     }
+  }
+
+  .reklamka{
+    padding: 8px;
   }
 </style>

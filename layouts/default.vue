@@ -1,7 +1,7 @@
 <template>
   <div>
     <Alert></Alert>
-    <header class="shadow-sm bg-white">
+    <header class="shadow-sm bg-white mb-4">
       <nav class="container mx-auto p-2 flex items-center">
         <ul class="flex flex-1 gap-2 justify-start items-center navigation">
           <li><NuxtLink to="/" class="btn-empty">Главная</NuxtLink></li>

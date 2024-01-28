@@ -9,8 +9,8 @@
         </div>
     </div>
   </template>
-  
-  <script setup>
+
+<script setup>
   import SectionsSectionCatalog from "~/components/sections/section-catalog.vue";
   import {useProductStore} from '@/stores/productStore.js'
     definePageMeta({
@@ -19,6 +19,8 @@
     const route = useRoute()
     const productStore = useProductStore()
     const products = productStore.all
+
+    productStore.getAllProducts();
 
     useHead({
       title: `Ramok-net.by`,

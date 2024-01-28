@@ -6,7 +6,7 @@
     <div class="info">
       <div class="texts">
         <p class="font-bold text-gray-500 m-2 truncate">{{ product.title }}</p>
-        <p class="font-bold text-gray-500 m-2 truncate">Стоимость: {{ product.price }} BYN</p>
+        <p class="font-bold text-gray-500 m-2 truncate">Цена: {{ product.price }} BYN</p>
       </div>
       <div class="flex flex-1 gap-2 justify-center buttons">
         <NuxtLink :to="`/products/${category}/${product.id}`">
@@ -69,26 +69,12 @@
 .btn-remove{
   background-color: #e24b4b;
 }
-.buttons{
-  @media (max-width: 639px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-}
-.texts{
-  @media (max-width: 639px) {
-    text-align: left;
-  }
-}
-.info{
-  @media (max-width: 639px) {
-    display: flex;
-    margin-top: 8px;
-  }
-}
 
+.product__image{
+  border-radius: 10px;
+}
 .card{
-  padding: 0.4em;
+  padding: 1.4em 0.7em ;
+  margin-bottom: 15px;
 }
 </style>
