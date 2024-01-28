@@ -628,13 +628,19 @@ export const useProductStore = defineStore('productStore', {
         ],
     }),
     actions: {
-        getAllProducts(){
+        getAllProducts() {
             // Объединить массивы из других стейтов в один массив "all"
-            let newArr = this.autos.concat(this.flags).concat(this.themes).concat(this.footbal).concat(this.texts)
-           newArr.forEach(el => {
-               el.category = "all"
-           })
+            let newArr = [
+                ...this.autos,
+                ...this.themes,
+                ...this.texts,
+                ...this.footbal,
+                ...this.flags
+            ];
+            newArr.forEach(el => {
+                el.category = "all"
+            })
             this.all = newArr
         }
-    },
+    }
 })

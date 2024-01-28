@@ -44,9 +44,11 @@ async function onSubmit(event) {
   cartStore.cart = []
 }
 
+
 async function sendToSubscribers(data) {
   let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
-  let sanya = "408745156"
+  let users = ["408745156", "809871443"]
+
   console.log(data)
   let { name, comment, phone, products, finalPrice } = data
   let strMatrix = "";
@@ -61,11 +63,13 @@ async function sendToSubscribers(data) {
   let message = `Клиент: ${name}%0AНомер телефона ${phone} %0AКоммент покупателя ${comment}%0AТовары: ${strMatrix}%0AИтоговая цена: ${finalPrice.toString()}BYN`;
 
   let api = new XMLHttpRequest();
+  users.forEach(el => {
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`
+    api.open("GET", url, true);
+    api.send();
+  })
 
 
-  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${sanya}&text=${message}&parse_mode=html`
-  api.open("GET", url, true);
-  api.send();
 
 
 }
