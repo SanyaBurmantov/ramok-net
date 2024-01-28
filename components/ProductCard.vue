@@ -1,6 +1,6 @@
 <template>
   <div class="card text-center">
-    <img :src="product.image" alt="product">
+    <img :src="product.image" class="product__image" alt="product">
     <div class="info">
       <div class="texts">
         <p class="font-bold text-gray-500 m-2 truncate">{{ product.title }}</p>
@@ -84,5 +84,11 @@
     display: flex;
     margin-top: 8px;
   }
+}
+.product__image{
+  width: 100%;
+}
+.card{
+  padding: 0.4em;
 }
 </style>

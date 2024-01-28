@@ -15,7 +15,7 @@ body {
         @apply px-3 py-2 rounded-md text-sm border
     }
     .card {
-        @apply p-3 rounded bg-white shadow-md h-full;
+        @apply rounded bg-white shadow-md;
     }
     .h2 {
         @apply text-2xl md:text-lg
