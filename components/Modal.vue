@@ -1,9 +1,18 @@
 <template>
   <div>
     <ClientOnly>
-    <button class="btn" @click="isOpen = true">
-      Корзина ({{cartStore.cart.length}})
-    </button>
+    <div class="btn button_block" @click="isOpen = true">
+      <div class="btn__wrapper">
+        <UButton
+            class="picture"
+            icon="i-heroicons-shopping-cart"
+            size="md"
+            square
+            variant="outlined"
+        />
+      </div>
+      <span class="text">Корзина</span>({{cartStore.cart.length}})
+    </div>
     </ClientOnly>
     <UModal v-model="isOpen">
       <div v-if="cartStore.cart.length < 1" class="empty-cart">
@@ -83,5 +92,31 @@ function getCount(){
 .empty-cart{
   margin: 20px;
   padding: 20px;
+}
+
+.picture{
+  display: none;
+  @media (max-width: 1000px){
+    display: block;
+    padding: 0;
+    margin-right: 8px;
+  }
+}
+
+.text{
+  display: block;
+  @media (max-width: 1000px){
+    display: none;
+  }
+}
+.button_block{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+}
+
+.btn__wrapper{
+  position: relative;
 }
 </style>

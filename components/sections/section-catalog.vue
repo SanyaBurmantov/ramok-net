@@ -42,6 +42,7 @@
       position: relative;
       transition: border 200ms;
       margin: -2px;
+      flex-wrap: nowrap;
       &:hover{
         border: 2px solid red;
         transform: scale(102%);

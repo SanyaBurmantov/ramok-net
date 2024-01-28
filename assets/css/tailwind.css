@@ -20,4 +20,8 @@ body {
     .h2 {
         @apply text-2xl md:text-lg
     }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

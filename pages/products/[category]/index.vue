@@ -1,5 +1,5 @@
 <template>
-  <div class="breadcrumb"><UBreadcrumb :links="links" /></div>
+  <div class="breadcrumb"><UBreadcrumb class="flex-wrap" :links="links" /></div>
   <div>
     <div class="products-list mb-10">
       <div class="" v-for="p in products">

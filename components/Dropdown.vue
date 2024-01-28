@@ -1,7 +1,7 @@
 <template>
   <div class="burger">
   <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }">
-    <UButton color="white" icon="i-heroicons-bars-3-bottom-right" label="Навигация" trailing-icon="i-heroicons-chevron-down-20-solid" />
+    <UButton color="white" class="dropdown"  icon="i-heroicons-bars-3-bottom-right" label="Навигация" trailing-icon="i-heroicons-chevron-down-20-solid" />
   </UDropdown>
   </div>
 </template>
@@ -28,6 +28,10 @@ const items = [
     display: none;
     @media (max-width: 1000px){
       display: block;
+      margin-left: 10px;
     }
+  }
+  .dropdown{
+    padding: 8px;
   }
 </style>

@@ -7,9 +7,9 @@
           <li><NuxtLink to="/" class="btn-empty">Главная</NuxtLink></li>
         </ul>
         <NuxtLink to="/" class="font-bold flex flex-1 justify-center logo"><img src="/logo.png" alt="logo"></NuxtLink>
-        <ul class="flex flex-1 gap-2 justify-end items-center navigation">
-          <li><NuxtLink to="/about" class="btn-empty">О нас</NuxtLink></li>
-          <li><NuxtLink to="/products" class="btn-empty">Товары</NuxtLink></li>
+        <ul class="flex flex-1 gap-2 justify-end items-center">
+          <li><NuxtLink to="/about" class="btn-empty navigation">О нас</NuxtLink></li>
+          <li><NuxtLink to="/products" class="btn-empty navigation">Товары</NuxtLink></li>
           <li><Modal v-model="isOpen"/></li>
         </ul>
         <Dropdown></Dropdown>
