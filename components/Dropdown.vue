@@ -1,6 +1,6 @@
 <template>
   <div class="burger">
-  <UDropdown :items="items" mode="hover" :popper="{ placement: 'bottom-start' }">
+  <UDropdown :items="items" mode="click" :popper="{ placement: 'bottom-start' }">
     <UButton color="white" class="dropdown"  icon="i-heroicons-bars-3-bottom-right" label="" trailing-icon="i-heroicons-chevron-down-20-solid" />
   </UDropdown>
   </div>
