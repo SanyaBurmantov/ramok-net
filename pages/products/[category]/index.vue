@@ -14,23 +14,18 @@
 </template>
 
 <script setup>
-import {useCategoriesStore, useProductStore} from '@/stores/productStore.js'
-import FormCallback from "~/components/forms/form-callback.vue";
-  definePageMeta({
-    layout: 'default'
-  })
-  
+  import {useCategoriesStore, useProductStore} from '@/stores/productStore.js'
+  import FormCallback from "~/components/forms/form-callback.vue";
+  import {useRouterStore} from "~/stores/routerStore.js";
+
+
+  const routerStore = useRouterStore()
   const categoryName = useRoute().params.category.toString()
+  routerStore.setCategory(categoryName)
+
   const productStore = useProductStore()
   const products = productStore[categoryName]
   const categoriesStore = useCategoriesStore().categories
-
-  useHead({
-    title: `Ramok-net.by | ${getNameOfStore(categoryName)}`,
-    meta: [
-      { name: 'description', content: `${getNameOfStore(categoryName)}` }
-    ]
-  })
 
   function getNameOfStore(category){
     let breadcrumbName = ""
@@ -46,7 +41,6 @@ import FormCallback from "~/components/forms/form-callback.vue";
     return breadcrumbName
   }
 
-
   const links = [{
     label: 'Главная',
     icon: 'i-heroicons-home',
@@ -59,6 +53,17 @@ import FormCallback from "~/components/forms/form-callback.vue";
     label: getNameOfStore(categoryName),
     icon: 'i-heroicons-square-3-stack-3d'
   }]
+
+  useHead({
+    title: `Ramok-net.by | ${getNameOfStore(categoryName)}`,
+    meta: [
+      { name: 'description', content: `${getNameOfStore(categoryName)}` }
+    ]
+  })
+
+  definePageMeta({
+    layout: 'default'
+  })
 </script>
 
 <style scoped>

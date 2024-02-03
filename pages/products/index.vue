@@ -18,14 +18,18 @@
 <script setup>
   import SectionsSectionCatalog from "~/components/sections/section-catalog.vue";
   import {useProductStore} from '@/stores/productStore.js'
+  import {useRouterStore} from "~/stores/routerStore.js";
     definePageMeta({
       layout: 'default'
     })
     const route = useRoute()
     const productStore = useProductStore()
+    const routerStore = useRouterStore()
+    routerStore.setCategory('all')
+    productStore.getAllProducts();
+
     const products = productStore.all
 
-    productStore.getAllProducts();
 
     useHead({
       title: `Ramok-net.by`,

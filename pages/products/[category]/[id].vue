@@ -11,22 +11,29 @@
   
   <script setup>
   import { useProductStore } from '@/stores/productStore.js'
+  import { useRouterStore } from "@/stores/routerStore.js";
 
+  const test = useRoute().params
+  const routerStore = useRouterStore()
+  const categoryFromState = routerStore.getCategory()
+  useRoute().params.category = categoryFromState
   const id = useRoute().params.id.toString()
   const categoryName = useRoute().params.category.toString()
   const productStore = useProductStore()
-  const products = productStore[categoryName]
-  const product = getProductByid()
-  function getProductByid(){
-    let product = {}
-    products.map(el => {
-      if(el.id === id){
-        product =  el
-      }
-    })
-    return product
-  }
+  const products = productStore[categoryFromState]
+  getProductByid()
+  const product = routerStore.getCurrentProduct()
 
+    function getProductByid(){
+      let product = {}
+      products?.map(el => {
+        if(el.id === id){
+          product =  el
+        }
+      })
+      routerStore.setProduct(product)
+      // return product
+  }
 
   definePageMeta({
     // layout: 'products'

@@ -48,6 +48,7 @@
 
 <script setup>
   import {useCartStore} from "~/stores/cartStore.js";
+  import {useRouterStore} from "~/stores/routerStore.js";
 
   const { product } = defineProps(['product'])
   const cartStore = useCartStore()
@@ -60,8 +61,8 @@
   function productInCart(){
     return cartStore.cart.some(item => item.id === product.id);
   }
-  const route = useRoute()
-  const category = (route.params.category) && 'all'
+  const routerStore = useRouterStore()
+  const category = routerStore.getCategory()
 
 </script>
 
