@@ -29,6 +29,7 @@
           <li><NuxtLink to="/">Главная</NuxtLink></li>
           <li><NuxtLink to="/about">О нас</NuxtLink></li>
           <li><NuxtLink to="/products">Каталог</NuxtLink></li>
+          <a href="https://webmaster.yandex.ru/siteinfo/?site=ramok-net.by"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?ramok-net.by&theme=dark&lang=ru"/></a>
         </ul>
       </nav>
     </footer>
