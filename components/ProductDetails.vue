@@ -3,7 +3,7 @@
   <div class="card">
     <div class="card__info">
       <div class="p-3">
-        <img :src="product.image" alt="product img" class="mx-auto my-7">
+        <img v-if="product.image" :src="product.image" alt="product img" class="mx-auto my-7">
       </div>
       <div class="p-7">
         <h2 class="text-4xl my-7">{{ product.title }}</h2>
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  <div class="mt-20 container reklamka">
+  <div class="mt-20 container catalog">
     <h2 class="text-4xl my-7">Смотрите так же</h2>
     <SectionCatalog />
   </div>
@@ -70,7 +70,6 @@
     let breadcrumbName = ""
     categoriesStore.forEach(el => {
       if(el.type === category){
-        console.log(el.type)
         breadcrumbName =  el.name
       }
     })
@@ -123,7 +122,7 @@
     }
   }
 
-  .reklamka{
+  .catalog{
     padding: 8px;
   }
 </style>
