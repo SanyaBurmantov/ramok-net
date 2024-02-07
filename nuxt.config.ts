@@ -6,7 +6,9 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxt/ui',
-    'nuxt-lazy-load'
+    'nuxt-lazy-load',
+    'yandex-metrika-module-nuxt3',
+    'nuxt-gtag',
   ],
   css: ['~/assets/scss/main.scss'],
   pinia: {
@@ -38,28 +40,24 @@ export default defineNuxtConfig({
       ]
     }
   },
-  runtimeConfig: {
-    currencyKey: process.env.CURRENCY_API_KEY
+  yandexMetrika: {
+    id: '96387730',
+  },
+  gtag: {
+    id: 'G-ZF7DQTR1V6'
   },
   lazyLoad: {
-    // These are the default values
     images: true,
     videos: true,
     audios: true,
     iframes: true,
     native: false,
     directiveOnly: false,
-
-    // Default image must be in the public folder
-
-
-    // To remove class set value to false
     loadingClass: 'isLoading',
     loadedClass: 'isLoaded',
     appendClass: 'lazyLoad',
-
     observerConfig: {
-      // See IntersectionObserver documentation
     }
-  }
+  },
+
 })
