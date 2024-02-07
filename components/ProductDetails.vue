@@ -38,7 +38,7 @@
       </div>
     </div>
   </div>
-  <div class="mt-20 container catalog">
+  <div class="mt-4 container catalog">
     <h2 class="text-4xl my-7">Смотрите так же</h2>
     <SectionCatalog />
   </div>
