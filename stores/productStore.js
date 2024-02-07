@@ -49,10 +49,10 @@ export const useProductStore = defineStore('productStore', {
         autos: [
             {
                 category: "autos",
-                description: "Модель вашего любимого авто",
+                description: "Модель вашего любимого авто.",
                 id: "101",
                 image:  "/images/mainPage/categorys/autos/2.png",
-                price: "109.95",
+                price: "38",
                 title: "Dodge | Durango",
             },
             {
@@ -60,28 +60,28 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "102",
                 image:  "/images/mainPage/categorys/autos/3.png",
-                price: "109.95",
+                price: "38",
                 title: "Audi A6",
             },{
                 category: "autos",
                 description: "Модель вашего любимого авто",
                 id: "103",
                 image:  "/images/mainPage/categorys/autos/4.png",
-                price: "109.95",
+                price: "38",
                 title: "BMW E34",
             },{
                 category: "autos",
                 description: "Модель вашего любимого авто",
                 id: "104",
                 image:  "/images/mainPage/categorys/autos/5.png",
-                price: "109.95",
+                price: "38",
                 title: "Volvo",
             },{
                 category: "autos",
                 description: "Модель вашего любимого авто",
                 id: "105",
                 image:  "/images/mainPage/categorys/autos/6.png",
-                price: "109.95",
+                price: "38",
                 title: "ГАЗ",
             },
             {
@@ -89,7 +89,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "106",
                 image:  "/images/mainPage/categorys/autos/7.png",
-                price: "109.95",
+                price: "38",
                 title: "Land Cruiser",
             },
             {
@@ -97,7 +97,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "108",
                 image:  "/images/mainPage/categorys/autos/9.png",
-                price: "109.95",
+                price: "38",
                 title: "Volkswagen",
             },
             {
@@ -105,7 +105,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "109",
                 image:  "/images/mainPage/categorys/autos/10.png",
-                price: "109.95",
+                price: "38",
                 title: "Mitsubishi",
             },
             {
@@ -113,7 +113,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "110",
                 image:  "/images/mainPage/categorys/autos/11.png",
-                price: "109.95",
+                price: "38",
                 title: "Kia Rio",
             },
             {
@@ -121,7 +121,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "111",
                 image:  "/images/mainPage/categorys/autos/12.png",
-                price: "109.95",
+                price: "38",
                 title: "GEELY COOLRAY",
             },
             {
@@ -129,7 +129,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "112",
                 image:  "/images/mainPage/categorys/autos/13.png",
-                price: "109.95",
+                price: "38",
                 title: "BMW Club Belarus",
             },
             {
@@ -137,7 +137,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "113",
                 image:  "/images/mainPage/categorys/autos/14.png",
-                price: "109.95",
+                price: "38",
                 title: "4x4 Jeep",
             },
             {
@@ -145,7 +145,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "114",
                 image:  "/images/mainPage/categorys/autos/15.png",
-                price: "109.95",
+                price: "38",
                 title: "Peugeot 406",
             },
             {
@@ -153,14 +153,14 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "115",
                 image:  "/images/mainPage/categorys/autos/16.png",
-                price: "109.95",
+                price: "38",
                 title: "Renault Megane",
             },{
                 category: "autos",
                 description: "Модель вашего любимого авто",
                 id: "116",
                 image:  "/images/mainPage/categorys/autos/17.png",
-                price: "109.95",
+                price: "38",
                 title: "SKODA RS",
             },
             {
@@ -168,21 +168,21 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "117",
                 image:  "/images/mainPage/categorys/autos/18.png",
-                price: "109.95",
+                price: "38",
                 title: "Lada CROSS",
             },{
                 category: "autos",
                 description: "Модель вашего любимого авто",
                 id: "118",
                 image:  "/images/mainPage/categorys/autos/19.png",
-                price: "109.95",
+                price: "38",
                 title: "Opel Vectra C",
             },{
                 category: "autos",
                 description: "Модель вашего любимого авто",
                 id: "119",
                 image:  "/images/mainPage/categorys/autos/20.png",
-                price: "109.95",
+                price: "38",
                 title: "Nissan X-TRAIL t30",
             },
             {
@@ -190,7 +190,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "120",
                 image:  "/images/mainPage/categorys/autos/21.png",
-                price: "109.95",
+                price: "38",
                 title: "GEELY Tugella",
             },
             {
@@ -198,7 +198,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Модель вашего любимого авто",
                 id: "121",
                 image:  "/images/mainPage/categorys/autos/22.png",
-                price: "109.95",
+                price: "38",
                 title: "Mercedes-Benz w211",
             }
         ],
@@ -208,7 +208,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "200",
                 image:  "/images/mainPage/categorys/themes/1.png",
-                price: "109.95",
+                price: "38",
                 title: "GTA SanAndreas",
             },
             {
@@ -216,7 +216,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "199",
                 image:  "/images/mainPage/categorys/themes/2.png",
-                price: "109.95",
+                price: "38",
                 title: "GTA ViceCity",
             },
             {
@@ -224,7 +224,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "198",
                 image:  "/images/mainPage/categorys/themes/3.png",
-                price: "109.95",
+                price: "38",
                 title: "Bears",
             },
             {
@@ -232,7 +232,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "197",
                 image:  "/images/mainPage/categorys/themes/4.png",
-                price: "109.95",
+                price: "38",
                 title: "World Of Tanks",
             },
             {
@@ -240,7 +240,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "196",
                 image:  "/images/mainPage/categorys/themes/5.png",
-                price: "109.95",
+                price: "38",
                 title: "Guardians of the Galaxy",
             },
             {
@@ -248,7 +248,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "194",
                 image:  "/images/mainPage/categorys/themes/7.png",
-                price: "109.95",
+                price: "38",
                 title: "Sword Ar Online",
             },
             {
@@ -256,7 +256,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "193",
                 image:  "/images/mainPage/categorys/themes/8.png",
-                price: "109.95",
+                price: "38",
                 title: "Marvel",
             },
             {
@@ -264,7 +264,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "191",
                 image:  "/images/mainPage/categorys/themes/10.png",
-                price: "109.95",
+                price: "38",
                 title: "Anime",
             },
             {
@@ -272,7 +272,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "189",
                 image:  "/images/mainPage/categorys/themes/12.png",
-                price: "109.95",
+                price: "38",
                 title: "CS GO",
             },
             {
@@ -280,7 +280,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "188",
                 image:  "/images/mainPage/categorys/themes/13.png",
-                price: "109.95",
+                price: "38",
                 title: "Skeletons",
             },
             {
@@ -288,7 +288,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "187",
                 image:  "/images/mainPage/categorys/themes/14.png",
-                price: "109.95",
+                price: "38",
                 title: "The Simpsons",
             },
             {
@@ -296,7 +296,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "186",
                 image:  "/images/mainPage/categorys/themes/15.png",
-                price: "109.95",
+                price: "38",
                 title: "В чем сила брат?",
             },
             {
@@ -304,7 +304,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "185",
                 image:  "/images/mainPage/categorys/themes/16.png",
-                price: "109.95",
+                price: "38",
                 title: "DeadPool",
             },
             {
@@ -312,7 +312,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Игры фильмы книги",
                 id: "184",
                 image:  "/images/mainPage/categorys/themes/17.png",
-                price: "109.95",
+                price: "38",
                 title: "NFS",
             },
         ],
@@ -322,7 +322,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "8",
                 image:  "/images/mainPage/categorys/texts/1.png",
-                price: "109.95",
+                price: "28",
                 title: "Немецкая сучка",
             },
             {
@@ -330,7 +330,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "9",
                 image:  "/images/mainPage/categorys/texts/2.png",
-                price: "109.95",
+                price: "28",
                 title: "Я люблю газ давать пи**а",
             },
             {
@@ -338,7 +338,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "10",
                 image:  "/images/mainPage/categorys/texts/3.png",
-                price: "109.95",
+                price: "28",
                 title: "Fake-Taxi",
             },
             {
@@ -346,7 +346,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "11",
                 image:  "/images/mainPage/categorys/texts/4.png",
-                price: "109.95",
+                price: "28",
                 title: "Мамы, прячте дочек",
             },
             {
@@ -354,7 +354,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "12",
                 image:  "/images/mainPage/categorys/texts/5.png",
-                price: "109.95",
+                price: "28",
                 title: "Вообще по*уй",
             },
             {
@@ -362,7 +362,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "13",
                 image:  "/images/mainPage/categorys/texts/6.png",
-                price: "109.95",
+                price: "28",
                 title: "Буква Ю",
             },
             {
@@ -370,7 +370,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "14",
                 image:  "/images/mainPage/categorys/texts/7.png",
-                price: "109.95",
+                price: "28",
                 title: "MMM HUETA",
             },
             {
@@ -378,7 +378,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Тут мог бы быть ваш инстаграм =)",
                 id: "15",
                 image:  "/images/mainPage/categorys/texts/8.png",
-                price: "109.95",
+                price: "28",
                 title: "Ваш инстаграм",
             },
             {
@@ -386,7 +386,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "16",
                 image:  "/images/mainPage/categorys/texts/9.png",
-                price: "109.95",
+                price: "28",
                 title: "BRAZZERS",
             },
             {
@@ -394,7 +394,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "17",
                 image:  "/images/mainPage/categorys/texts/10.png",
-                price: "109.95",
+                price: "28",
                 title: "Вам показалось",
             },
             {
@@ -402,7 +402,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "18",
                 image:  "/images/mainPage/categorys/texts/11.png",
-                price: "109.95",
+                price: "28",
                 title: "Японская сучка",
             },
             {
@@ -410,7 +410,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "19",
                 image:  "/images/mainPage/categorys/texts/12.png",
-                price: "109.95",
+                price: "28",
                 title: "Вези меня мразь",
             },
             {
@@ -418,7 +418,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "20",
                 image:  "/images/mainPage/categorys/texts/13.png",
-                price: "109.95",
+                price: "28",
                 title: "Не прижимайся - не в постели",
             },
             {
@@ -426,7 +426,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "21",
                 image:  "/images/mainPage/categorys/texts/14.png",
-                price: "109.95",
+                price: "28",
                 title: "Отец на дороге",
             },
             {
@@ -434,7 +434,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "22",
                 image:  "/images/mainPage/categorys/texts/15.png",
-                price: "109.95",
+                price: "28",
                 title: "Не нужна тебе такая тачка брат",
             },
             {
@@ -442,7 +442,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "23",
                 image:  "/images/mainPage/categorys/texts/16.png",
-                price: "109.95",
+                price: "28",
                 title: "Обогнал - женись",
             },
             {
@@ -450,7 +450,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "24",
                 image:  "/images/mainPage/categorys/texts/17.png",
-                price: "109.95",
+                price: "28",
                 title: "Не гнилая а облегченная",
             },
             {
@@ -458,7 +458,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "25",
                 image:  "/images/mainPage/categorys/texts/18.png",
-                price: "109.95",
+                price: "28",
                 title: "Просто рамка",
             },
             {
@@ -466,7 +466,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Тут мог бы быть ваш текст",
                 id: "26",
                 image:  "/images/mainPage/categorys/texts/19.png",
-                price: "109.95",
+                price: "28",
                 title: "Любой ваш текст",
             },
             {
@@ -474,7 +474,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "27",
                 image:  "/images/mainPage/categorys/texts/20.png",
-                price: "109.95",
+                price: "28",
                 title: "PornHub",
             },
             {
@@ -482,7 +482,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "28",
                 image:  "/images/mainPage/categorys/texts/21.png",
-                price: "109.95",
+                price: "28",
                 title: "Я девочка мне можно",
             },
             {
@@ -490,7 +490,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Это один из примеров, Вы можете выбрать любой текст надписи!",
                 id: "29",
                 image:  "/images/mainPage/categorys/texts/22.png",
-                price: "109.95",
+                price: "28",
                 title: "Главное двигаться",
             },
         ],
@@ -500,7 +500,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "300",
                 image:  "/images/mainPage/categorys/footbal/1.png",
-                price: "109.95",
+                price: "38",
                 title: "Dinamo Minsk",
             },
             {
@@ -508,7 +508,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "301",
                 image:  "/images/mainPage/categorys/footbal/2.png",
-                price: "109.95",
+                price: "38",
                 title: "FC Barselona",
             },
             {
@@ -516,7 +516,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "302",
                 image:  "/images/mainPage/categorys/footbal/3.png",
-                price: "109.95",
+                price: "38",
                 title: "Realmadrid",
             },
             {
@@ -524,7 +524,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "304",
                 image:  "/images/mainPage/categorys/footbal/5.png",
-                price: "109.95",
+                price: "38",
                 title: "CSKA MOSCOW",
             },
             {
@@ -532,7 +532,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "305",
                 image:  "/images/mainPage/categorys/footbal/6.png",
-                price: "109.95",
+                price: "38",
                 title: "FC MANCHESTER UNITED",
             },
             {
@@ -540,7 +540,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "307",
                 image:  "/images/mainPage/categorys/footbal/8.png",
-                price: "109.95",
+                price: "38",
                 title: "FC MANCHESTER UNITED",
             },
             {
@@ -548,7 +548,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "308",
                 image:  "/images/mainPage/categorys/footbal/9.png",
-                price: "109.95",
+                price: "38",
                 title: "Arsenal",
             },
             {
@@ -556,7 +556,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Футбольная тематика",
                 id: "309",
                 image:  "/images/mainPage/categorys/footbal/10.png",
-                price: "109.95",
+                price: "38",
                 title: "JUVENTUS",
             },
         ],
@@ -566,7 +566,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "201",
                 image:  "/images/mainPage/categorys/flags/1.png",
-                price: "109.95",
+                price: "38",
                 title: "Japan",
             },
             {
@@ -574,7 +574,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "202",
                 image:  "/images/mainPage/categorys/flags/2.png",
-                price: "109.95",
+                price: "38",
                 title: "Germany",
             },
             {
@@ -582,7 +582,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "203",
                 image:  "/images/mainPage/categorys/flags/3.png",
-                price: "109.95",
+                price: "38",
                 title: "Italy",
             },
             {
@@ -590,7 +590,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "204",
                 image:  "/images/mainPage/categorys/flags/4.png",
-                price: "109.95",
+                price: "38",
                 title: "France",
             },
             {
@@ -598,7 +598,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "205",
                 image:  "/images/mainPage/categorys/flags/5.png",
-                price: "109.95",
+                price: "38",
                 title: "United K",
             },
             {
@@ -606,7 +606,7 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "206",
                 image:  "/images/mainPage/categorys/flags/6.png",
-                price: "109.95",
+                price: "38",
                 title: "Sweden",
             },
             {
@@ -614,14 +614,14 @@ export const useProductStore = defineStore('productStore', {
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "207",
                 image:  "/images/mainPage/categorys/flags/7.png",
-                price: "109.95",
+                price: "38",
                 title: "Belarus",
             },{
                 category: "flags",
                 description: "Флаг любой страны в любом оформлении и дизайне",
                 id: "208",
                 image:  "/images/mainPage/categorys/flags/8.png",
-                price: "109.95",
+                price: "38",
                 title: "IDK",
             },
 

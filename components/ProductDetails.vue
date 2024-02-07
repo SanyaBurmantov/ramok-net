@@ -7,7 +7,10 @@
       </div>
       <div class="p-7">
         <h2 class="text-4xl my-7">{{ product.title }}</h2>
-        <p class="text-xl my-7">Price - {{ product.price }} </p>
+        <p class="text-xl my-7">Стоимость - {{ product.price }} BYN </p>
+        <p v-if="category ==='texts'" class="text-xl my-7">Внимание: цена указана за 2 планки.</p>
+        <p v-if="category !=='texts'" class="text-xl my-7">Внимание: цена указана за 2 рамки.</p>
+        <p v-if="category !=='texts'" class="text-xl my-7">Вы можете выбрать как квадратные рамки так и прямоугольные (либо одна прямоугольная + одна квадратная).</p>
         <h3 class="font-bold border-b-2 mb-4 pb-2">Описание:</h3>
         <p class="mb-7">{{ product.description }}</p>
         <ClientOnly>
