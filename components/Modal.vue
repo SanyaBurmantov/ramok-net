@@ -4,7 +4,7 @@
     <div class="btn button_block" @click="isOpen = true">
       <div class="btn__wrapper">
         <UButton
-            class="picture"
+            class="picture btn-empty"
             icon="i-heroicons-shopping-cart"
             size="md"
             square
@@ -110,10 +110,15 @@ function getCount(){
   }
 }
 .button_block{
-  position: relative;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
   display: flex;
-  align-items: center;
-  padding: 4px 12px;
+
 }
 
 .btn__wrapper{
