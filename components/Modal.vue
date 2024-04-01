@@ -110,14 +110,16 @@ function getCount(){
   }
 }
 .button_block{
-  border-radius: 0.375rem;
-  border-width: 1px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 0.875rem;
-  display: flex;
+  @media (max-width: 1000px) {
+    border-radius: 0.375rem;
+    border-width: 1px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+  }
 
 }
 

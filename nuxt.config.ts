@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     'nuxt-lazy-load',
     'yandex-metrika-module-nuxt3',
     'nuxt-gtag',
+    'nuxt3-meta-pixel',
   ],
   css: ['~/assets/scss/main.scss'],
   pinia: {
@@ -58,6 +59,13 @@ export default defineNuxtConfig({
     appendClass: 'lazyLoad',
     observerConfig: {
     }
+  },
+  facebook: {
+    /* module options */
+    track: 'PageView',
+    pixelId: '1680246355716973',
+    autoPageView: true,
+    disabled: false
   },
 
 })
