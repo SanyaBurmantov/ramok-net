@@ -46,9 +46,9 @@ async function onSubmit(event) {
 
 
 async function sendToSubscribers(data) {
-  if(!data) return
+  if (!data) return
   let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
-  let users = ["408745156", "809871443"]
+  let users = ["408745156", "8098714143", "573341013"]
 
   let { name, comment, phone, products, finalPrice } = data
   let strMatrix = "";

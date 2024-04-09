@@ -41,7 +41,7 @@ async function onSubmit(event) {
 
 async function sendToFeedback(data) {
   let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
-  let users = ["408745156", "809871443"]
+  let users = ["408745156", "809871443", "573341013"]
   let { name, phone} = data
 
   let message = `Клиент: ${name}%0AНомер телефона ${phone} %0A%0AПросит обратную связь!`;
