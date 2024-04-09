@@ -22,6 +22,7 @@
 
 <script setup>
 import {useAlertStore} from "~/stores/alertStore.js";
+import axios from "axios";
 
 const state = reactive({
   name: undefined,
@@ -40,20 +41,27 @@ async function onSubmit(event) {
 }
 
 async function sendToFeedback(data) {
-  let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ";
-  let users = ["408745156", "809871443", "573341013"];
-  let { name, phone } = data;
+  const token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ";
+  const users = ["408745156", "809871443", "573341013"];
+  const { name, phone } = data;
+  const message = `Клиент: ${name}%0AНомер телефона ${phone} %0A%0AПросит обратную связь!`;
+  const requests = [];
 
-  let message = `Клиент: ${name}%0AНомер телефона ${phone} %0A%0AПросит обратную связь!`;
+  try {
+    for (let el of users) {
+      const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`;
+      requests.push(axios.get(url));
+    }
 
-  for (let el of users) {
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`;
-    let api = new XMLHttpRequest();
-    api.open("GET", url, true);
-    api.send();
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Ждем 1 секунду перед отправкой следующего запроса
+    await Promise.all(requests);
+  } catch (error) {
+    alertStore.showAlert(`Ошибка отправки ${error.message} попробуйте снова!`)
+    console.error("Ошибка отправки сообщений:", error);
   }
+
+
 }
+
 
 </script>
 

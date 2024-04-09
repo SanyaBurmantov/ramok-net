@@ -20,6 +20,7 @@
 import {ref} from 'vue'
 import {useCartStore} from "~/stores/cartStore.js";
 import {useAlertStore} from "~/stores/alertStore.js";
+import axios from "axios";
 
 const phone = ref('')
 const cartStore = useCartStore()
@@ -46,31 +47,26 @@ async function onSubmit(event) {
 
 
 async function sendToSubscribers(data) {
-  if(!data) return
-  let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
-  let users = ["408745156",
-    "809871443",
-    "573341013"
-  ]
+  if (!data) return;
 
-  let { name, comment, phone, products, finalPrice } = data
-  let strMatrix = "";
-  let posValue = products.length;
+  const token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ";
+  const users = ["408745156", "809871443", "573341013"];
+  const { name, comment, phone, products, finalPrice } = data;
 
-  products.forEach(el => {
-    strMatrix += "%0A %09" + el.title.toString();
-    strMatrix += "%0A %09" + el.category.toString();
-    strMatrix += "%0A %09Цена " + el.price.toString() + "BYN%0A";
-  })
+  const strMatrix = products.map(el => {
+    return `%0A%09${el.title}%0A%09${el.category}%0A%09Цена ${el.price}BYN%0A`;
+  }).join('');
 
-  let message = `Клиент: ${name}%0AНомер телефона ${phone} %0AКоммент покупателя ${comment}%0AТовары: ${strMatrix}%0AИтоговая цена: ${finalPrice.toString()}BYN`;
+  const message = `Клиент: ${name}%0AНомер телефона ${phone}%0AКоммент покупателя ${comment}%0AТовары: ${strMatrix}%0AИтоговая цена: ${finalPrice}BYN`;
 
-  let api = new XMLHttpRequest();
-  for (let el of users) {
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`;
-    api.open("GET", url, true);
-    api.send();
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Ждем 1 секунду перед отправкой следующего запроса
+  try {
+    for (let el of users) {
+      const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`;
+      await axios.get(url);
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Ждем 1 секунду перед отправкой следующего запроса
+    }
+  } catch (error) {
+    console.error("Ошибка при отправке сообщений:", error);
   }
 }
 
