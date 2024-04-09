@@ -6,8 +6,8 @@
     <UFormGroup class="mb-2" label="Номер телефона">
       <UInput v-model="state.phone" icon="i-heroicons-phone" type="string" placeholder="Ваш номер телефона"/>
     </UFormGroup>
-    <UFormGroup class="mb-4" label="Ваш комментарий">
-      <UInput placeholder="Жду звонка =)" v-model="state.comment" icon="i-heroicons-envelope" />
+    <UFormGroup class="mb-4" label="Укажите предпочтительный способ связи (Telegram, Viber, звонок по мобильному)">
+      <UInput placeholder="Свяжитесь со мной по ... " v-model="state.comment" icon="i-heroicons-envelope" />
     </UFormGroup>
 
     <UButton type="submit">
@@ -48,7 +48,10 @@ async function onSubmit(event) {
 async function sendToSubscribers(data) {
   if(!data) return
   let token = "6619858114:AAHDaC0QVvueqSQMwlol7rkit-vw6qTHufQ"
-  let users = ["408745156", "809871443"]
+  let users = ["408745156",
+    "809871443",
+    "573341013"
+  ]
 
   let { name, comment, phone, products, finalPrice } = data
   let strMatrix = "";
@@ -63,11 +66,12 @@ async function sendToSubscribers(data) {
   let message = `Клиент: ${name}%0AНомер телефона ${phone} %0AКоммент покупателя ${comment}%0AТовары: ${strMatrix}%0AИтоговая цена: ${finalPrice.toString()}BYN`;
 
   let api = new XMLHttpRequest();
-  users.forEach(el => {
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`
+  for (let el of users) {
+    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${el}&text=${message}&parse_mode=html`;
     api.open("GET", url, true);
     api.send();
-  })
+    await new Promise(resolve => setTimeout(resolve, 1000)); // Ждем 1 секунду перед отправкой следующего запроса
+  }
 }
 
 function validatePhoneNumber(phoneNumber) {
