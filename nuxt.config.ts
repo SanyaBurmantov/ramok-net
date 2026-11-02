@@ -1,71 +1,69 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  compatibilityDate: '2026-11-01',
+
   modules: [
-    '@pinia/nuxt',
-    'nuxt-swiper',
-    '@pinia-plugin-persistedstate/nuxt',
     '@nuxt/ui',
-    'nuxt-lazy-load',
-    'yandex-metrika-module-nuxt3',
+    '@nuxt/image',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
     'nuxt-gtag',
-    'nuxt3-meta-pixel',
   ],
-  css: ['~/assets/scss/main.scss'],
-  pinia: {
-    storesDirs: ['./stores/**'],
-  },
-  swiper: {
-    prefix: 'Swiper',
-    styleLang: 'scss',
-    modules: ['navigation', 'pagination'],
-  },
+
+  devtools: { enabled: true },
+
+  css: ['~/assets/css/main.css'],
+
   app: {
     head: {
-      title: 'Ramok-net.by',
-      meta: [
-        { name: 'description', content: 'Индивидуальные номерные рамки для автомобилей с уникальными дизайнами. Выберите готовый дизайн или создайте свой собственный. Качественные номерные рамки для стильного оформления вашего авто.'},
-        { name: 'og:title', property: 'og:title', content: 'Ramok-Net.by' },
-        { name: 'og:description', property: 'og:description', content: 'Индивидуальные номерные рамки для автомобилей с уникальными дизайнами.' },
-        { name: 'og:image', property: 'og:image', content: '/logo.png' },
-        { name: 'og:url', property: 'og:url', content: 'https://ramok-net.by' },  // Замените на фактический URL вашего сайта
-        { name: 'twitter:card', content: '/logo.png' },
-        { name: 'twitter:title', content: 'Ramok-Net.by' },
-        { name: 'twitter:description', content: 'Индивидуальные номерные рамки для автомобилей с уникальными дизайнами.' },
-        { name: 'twitter:image', content: '/logo.png' }
-      ],
+      htmlAttrs: { lang: 'ru' },
+      link: [{ rel: 'icon', href: '/favicon.ico' }],
+      meta: [{ name: 'theme-color', content: '#09090b' }],
+    },
+  },
 
-      link: [
-        { rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
-      ]
-    }
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
   },
-  yandexMetrika: {
-    id: '96387730',
+
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600, 700, 800],
+      subsets: ['latin', 'cyrillic'],
+    },
   },
+
+  image: {
+    quality: 80,
+    format: ['webp'],
+  },
+
+  runtimeConfig: {
+    // Задаются через переменные окружения NUXT_TELEGRAM_BOT_TOKEN / NUXT_TELEGRAM_CHAT_IDS
+    telegramBotToken: '',
+    telegramChatIds: '408745156,809871443,573341013',
+    public: {
+      siteUrl: 'https://ramok-net.by',
+      yandexMetrikaId: '96387730',
+      metaPixelId: '1680246355716973',
+    },
+  },
+
+  routeRules: {
+    '/products/all': { redirect: { to: '/products', statusCode: 301 } },
+  },
+
   gtag: {
-    id: 'G-ZF7DQTR1V6'
-  },
-  lazyLoad: {
-    images: true,
-    videos: true,
-    audios: true,
-    iframes: true,
-    native: false,
-    directiveOnly: false,
-    loadingClass: 'isLoading',
-    loadedClass: 'isLoaded',
-    appendClass: 'lazyLoad',
-    observerConfig: {
-    }
-  },
-  facebook: {
-    /* module options */
-    track: 'PageView',
-    pixelId: '1680246355716973',
-    autoPageView: true,
-    disabled: false
+    id: 'G-ZF7DQTR1V6',
   },
 
+  $development: {
+    gtag: { enabled: false },
+  },
+
+  piniaPluginPersistedstate: {
+    storage: 'cookies',
+    cookieOptions: { sameSite: 'lax', maxAge: 60 * 60 * 24 * 30 },
+  },
 })
